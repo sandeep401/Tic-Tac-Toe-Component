@@ -1,0 +1,68 @@
+
+.tic-tac-toe{
+    height: 450px;
+    width: 450px;
+    /* border: 2px solid green;
+    border-radius: 6px; */
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 100%;
+}
+
+button{
+    display: inline-flex;
+    height: 150px;
+    width:  150px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(5),
+button:nth-child(6){
+    border-bottom: 2px solid green;
+}
+
+button:nth-child(1),
+button:nth-child(4),
+button:nth-child(7),
+button:nth-child(2),
+button:nth-child(5),
+button:nth-child(8){
+    border-right: 2px solid green;
+}
+
+.restart-btn{
+    height: 70px;
+    width: 150px;
+}
+
+.message{
+    position: absolute;
+    top: 30%;
+    left: 68%;
+    font-size: 30px;
+}
